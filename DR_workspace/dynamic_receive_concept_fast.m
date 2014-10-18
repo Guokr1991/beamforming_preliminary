@@ -1,4 +1,6 @@
 function [focus_rf, x, z] = dynamic_receive_concept_fast(rf,acq_params,bf_params)
+%testing for github
+
 % rf - raw rf data organized [rf_line,rx_chan, tx_event]
 
 %all focusing performed on axis
