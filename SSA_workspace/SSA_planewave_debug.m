@@ -34,8 +34,6 @@ else
     gridx = lat_res.*(ceil(rangex(1)/lat_res):1:floor(rangex(2)/lat_res));
     gridz = ax_res.*(ceil(rangez(1)/ax_res):1:floor(rangez(2)/ax_res));
 end
-% gridx = -1:0.005:0; % x focal coord relative to focal center [cm]
-% gridz = -1.5:0.005:0; % z focal coord relative to focal center [cm]
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%    MAIN    %%%%%%
@@ -71,8 +69,6 @@ for nt = 1:length(th)
     xi(:,:,nt) = double(xi_tmp);
     zi(:,:,nt) = double(zi_tmp);   
 end
-
-
 
 for nt = 1:length(th) 
     foc_tmp = zeros(length(gridz), length(gridx), length(rx_pos));
